@@ -14,10 +14,10 @@ namespace EmployeeMnagement_WCF_
     // NOTE: In order to launch WCF Test Client for testing this service, please select EmployeeService.svc or EmployeeService.svc.cs at the Solution Explorer and start debugging.
     public class EmployeeService : IEmployeeService
     {
-        private readonly IuserBL userBL;
+        private readonly IEmployeeBusiness userBL;
         public EmployeeService()
         {
-            userBL = new UserBL();
+            userBL = new EmployeeBusiness();
         }
         public string AddEmployee(EmployeeContract employeeContract)
         {

@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace RepositoryLayer.Services
 {
-    public class UserRL : IuserRL
+    public class EmployeeRepository : IEmployeeRepository
     {
         EmployeeManagemnt_WCFEntities employeeManagemnt_WCF;
 
-        public UserRL()
+        public EmployeeRepository()
         {
             employeeManagemnt_WCF = new EmployeeManagemnt_WCFEntities();
         }

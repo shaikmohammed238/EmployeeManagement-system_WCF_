@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BussinessLayer.Interfaces
+namespace RepositoryLayer.Interfaces
 {
-    public interface IuserBL
+    public interface IEmployeeRepository
     {
         IList<EmployeeContract> GetAllEmployee();
-        string AddEmployee(EmployeeContract employeeContract);
-        string UpdateEmployee(EmployeeContract employeeContract, int Id);
+        int AddEmployee(EmployeeContract employeeContract);
+        int UpdateEmployee(EmployeeContract employeeContract, int Id);
         EmployeeContract GetById(int Id);
-        string DeleteEmployee(int Id);
+        int DeleteEmployee(int Id);
     }
 }

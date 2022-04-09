@@ -16,9 +16,9 @@ namespace EmployeeMnagement_WCF_
 
         [OperationContract]
         [WebInvoke(Method = "POST",
-             RequestFormat = WebMessageFormat.Json,
+             RequestFormat = WebMessageFormat.Json,        //arequset body and response body format is json 
              ResponseFormat = WebMessageFormat.Json,
-             UriTemplate = "/Add/")]
+             UriTemplate = "/Add/")]    //this are route names you should call operation to this name
         string AddEmployee(EmployeeContract employeeContract);
 
         [OperationContract]

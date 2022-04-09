@@ -41,9 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IuserBL.cs" />
+    <Compile Include="Interfaces\IEmployeeBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\UserBL.cs" />
+    <Compile Include="Services\EmployeeBusiness.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 
 namespace BussinessLayer.Services
 {
-    public class UserBL : IuserBL
+    public class EmployeeBusiness : IEmployeeBusiness
     {
-        private readonly IuserRL userRL;
+        private readonly IEmployeeRepository userRL;
 
-        public UserBL()
+        public EmployeeBusiness()
         {
-            userRL = new UserRL();
+            userRL = new EmployeeRepository();
         }
         /// <summary>
         /// Adds the employee.

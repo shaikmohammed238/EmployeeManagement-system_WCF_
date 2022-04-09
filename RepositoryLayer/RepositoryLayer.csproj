@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IuserRL.cs" />
+    <Compile Include="Interfaces\IEmployeeRepository.cs" />
     <Compile Include="Models\EmployeeManagemnt.cs">
       <DependentUpon>EmployeeModel.tt</DependentUpon>
     </Compile>
@@ -68,7 +68,7 @@
       <DependentUpon>EmployeeModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\UserRL.cs" />
+    <Compile Include="Services\EmployeeRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
