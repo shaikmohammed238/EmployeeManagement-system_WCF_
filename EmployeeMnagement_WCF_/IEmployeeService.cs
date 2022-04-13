@@ -48,5 +48,12 @@ namespace EmployeeMnagement_WCF_
         ResponseFormat = WebMessageFormat.Json,
         UriTemplate = "/delete/{Id}")]
         string DeleteEmployee(string Id);
+
+        [OperationContract]
+        [WebInvoke(Method = "GET",
+           RequestFormat = WebMessageFormat.Json,
+           ResponseFormat = WebMessageFormat.Json,
+           UriTemplate = "/GetByName/{Name}")]
+        EmployeeContract GetByName(string Name);
     }
 }

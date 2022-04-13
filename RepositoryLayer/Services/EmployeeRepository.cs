@@ -2,6 +2,7 @@
 using RepositoryLayer.Interfaces;
 using RepositoryLayer.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -93,6 +94,23 @@ namespace RepositoryLayer.Services
             };
             return employeeContract;
         }
+
+        public EmployeeContract GetByName(string Name)
+        {
+           // var Employee = employeeManagemnt_WCF.EmployeeManagemnts.Find(Name);
+            var Employee = (from a in employeeManagemnt_WCF.EmployeeManagemnts where a.Name.Contains (Name) select a).FirstOrDefault();
+            List<EmployeeContract> employeeData = new List<EmployeeContract>();
+
+            EmployeeContract employeeContract = new EmployeeContract()
+            {
+                Name = Employee.Name,
+                Email = Employee.Email,
+                Salary = (int)Employee.Salary,
+                Id = Employee.Id
+            };
+            return employeeContract;
+        }
+
         /// <summary>
         /// Updates the employee.
         /// </summary>

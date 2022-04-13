@@ -83,6 +83,20 @@ namespace BussinessLayer.Services
                 return new EmployeeContract();
             }
         }
+
+        public EmployeeContract GetByName(string Name)
+        {
+            EmployeeContract employeeContract = userRL.GetByName(Name);
+            if (employeeContract != null)
+            {
+                return employeeContract;
+            }
+            else
+            {
+                return new EmployeeContract();
+            }
+        }
+
         /// <summary>
         /// Updates the employee.
         /// </summary>

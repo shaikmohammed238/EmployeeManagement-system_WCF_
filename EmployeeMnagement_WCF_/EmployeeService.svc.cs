@@ -53,5 +53,9 @@ namespace EmployeeMnagement_WCF_
             int empId = Convert.ToInt32(Id);
             return userBL.DeleteEmployee(empId);
         }
+        public EmployeeContract GetByName(string Name)
+        {
+            return userBL.GetByName(Name);
+        }
     }
 }

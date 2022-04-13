@@ -14,5 +14,6 @@ namespace RepositoryLayer.Interfaces
         int UpdateEmployee(EmployeeContract employeeContract, int Id);
         EmployeeContract GetById(int Id);
         int DeleteEmployee(int Id);
+        EmployeeContract GetByName(string Name);
     }
 }

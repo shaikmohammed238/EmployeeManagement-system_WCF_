@@ -14,5 +14,6 @@ namespace BussinessLayer.Interfaces
         string UpdateEmployee(EmployeeContract employeeContract, int Id);
         EmployeeContract GetById(int Id);
         string DeleteEmployee(int Id);
+        EmployeeContract GetByName(string Name);
     }
 }
